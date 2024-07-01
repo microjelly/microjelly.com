@@ -1,0 +1,141 @@
+* {
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+html {
+    font-family: monospace;
+    max-width: 900px;
+    /* For Desktop PC (see @media for Tablets/Phones) */
+    padding-left: 2%;
+    padding-right: 3%;
+    margin: 0 auto;
+    background: #f3c3c3;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub {
+    top: 0.4em;
+}
+
+sup a {
+    font-size: 0.65em;
+}
+
+a.footnote-ref {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.footnote-ref::before {
+    content: '[';
+}
+
+a.footnote-ref::after {
+    content: ']';
+}
+
+section.footnotes hr {
+    display: none;
+}
+
+section.footnotes ol li p {
+    margin: 0px;
+}
+
+img {
+    border: none;
+}
+
+p {
+    margin-top: 0px;
+    text-align: justify;
+}
+
+pre {
+    font-family: monospace;
+    background-color: linen;
+    border: 1px solid Black;
+    padding-left: 2%;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    overflow: scroll;
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 4ch;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2ch;
+    margin-bottom: 0.5ch;
+}
+
+h1::before, h2::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    text-decoration: none;
+}
+
+img[src*="#40right"] {
+    width: 40%;
+    height: auto;
+    float: right;
+    margin-bottom: 1ch;
+    margin-left: 2ch;
+    border: 1px black solid;
+}
+
+img[src*="#25right"] {
+    width: 25%;
+    height: auto;
+    float: right;
+    margin-bottom: 1ch;
+    margin-left: 2ch;
+    border: 1px black solid;
+}
+
+blockquote {
+    background-color: #f3f3f3;
+    border: dashed 1px grey;
+    width: 97.5%;
+    font-style: italic;
+    text-align: justify;
+    padding: 1ch;
+    padding-top: 2ch;
+    padding-bottom: 2ch;
+    margin: 0ch;
+    margin-bottom: 2ch;
+    margin-top: 0ch;
+}
+
+blockquote div {
+    text-transform: none;
+    text-align: right;
+    width: 100%;
+}

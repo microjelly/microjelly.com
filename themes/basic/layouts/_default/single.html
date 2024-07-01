@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div style="margin-top: 2ch;text-transform: none;">
+    {{ partial "metadata.html" . }}
+</div>
+<h1 id="site_post_title">{{ .Title }}</h1>
+{{ .Content }}
+{{ end }}
