@@ -1,0 +1,5 @@
+baseURL = "https://microjelly.com/"
+languageCode = "en-us"
+title = "MICROJELLY PROJECT LOG"
+theme = "basic"
+disableKinds = ["taxonomy","term"]
